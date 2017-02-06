@@ -4,6 +4,7 @@ node_modules
 .DS_Store
 .gitignore
 _site
+_not-needed
 *.sublime*
 bower_components
 assets/src/stylesheets/vendors/*
