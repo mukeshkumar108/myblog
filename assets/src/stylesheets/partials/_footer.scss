@@ -1,10 +1,12 @@
 .site-footer {
   @include span-columns(12);
   @include omega();
-  border-top: 1px solid $light-gray;
+  //border-top: 1px solid $light-gray;
   color: $medium-gray;
-  font-size: 15px;
-  padding-top: $gutter;
+  border-top: 3px solid #eee;
+  //font-size: 1rem;
+  padding: $gutter 0;
+  color: $light-gray;
 
   div {
     overflow: hidden;
@@ -17,23 +19,30 @@
 }
 
 .footer-details-site {
-  @include span-columns(4 of 12);
-  @include media($small) {
-    @include span-columns(4)
-  }
+  //@include span-columns(4 of 12);
+  //@include media($small) {
+    //@include span-columns(4)
+  //}
+  font-family: $alt-font-family;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .footer-details-social {
-  @include span-columns(4 of 12);
-  @include pad();
-  @include media($small) {
-    @include span-columns(4)
-  }
+  //@include span-columns(4 of 12);
+  //@include pad();
+  //@include media($small) {
+    //@include span-columns(4)
+  //}
 }
 
 .footer-details-description {
-  @include span-columns(4 of 12);
-  @include media($small) {
-    @include span-columns(4)
-  }
+  //@include span-columns(4 of 12);
+  //@include media($small) {
+    //@include span-columns(4)
+  //}
+}
+
+.post-footer {
+  padding: $gutter 0;
 }

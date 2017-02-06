@@ -13,6 +13,7 @@
 @import 'base/settings';
 @import 'base/base';
 @import 'base/typography';
+@import 'base/layout';
 
 // Partials
 @import 'partials/global';
@@ -21,8 +22,11 @@
 
 // Components
 @import 'components/lists';
+@import 'components/buttons';
 @import 'components/post';
 @import 'components/posts-list';
+@import 'components/syntax';
+@import 'components/social';
 
 // Pages
 

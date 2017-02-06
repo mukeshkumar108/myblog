@@ -1,0 +1,18 @@
+---
+layout: default
+title: Work
+permalink: /work/
+---
+
+  <h1 class="home-page-title page-title--small font--alt">My latest projects</h1>
+  <h5>This is a test - can you see me?</h5>
+    <ul class="portfolio">
+  {% for project in site.portfolio limit:3 %}
+      <li>
+        <h1>
+          <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+        </h1>
+        <p>{{ project.summary }}</p>
+      </li>
+  {% endfor %}
+  </ul>

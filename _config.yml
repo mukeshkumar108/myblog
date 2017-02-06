@@ -1,11 +1,20 @@
-title: "bourbonify-jekyll"
-author: "Andrzej Kłapeć"
-email: your-email@domain.com
-keywords: "comma, separated, keywords"
-description: "Simple boilerplate for quickly setting up Jekyll with Normalize, Bourbon and Neat."
+title: "Mukesh Kumar's Blog | UX Designer | Digital Strategist"
+author: "Mukesh Kumar"
+email: kaiser.kumar108@gmail.com
+keywords: "Mukesh Kumar, Web Design, User Experience Design, Front-end Development, Wordpress Development"
+description: "The personal blog of Mukesh Kumar: including Front-End development, UX design, Digital Strategy and Wordpress development."
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://github.com/klapec" # the base hostname & protocol for your site
+url: "//mukeshkumar.surge.sh" # the base hostname & protocol for your site
+
+gems: [jekyll-paginate]
+
+paginate: 5
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
 
 markdown: redcarpet
 redcarpet:
@@ -13,6 +22,6 @@ redcarpet:
 
 exclude: ['assets/src', 'node_modules', 'package.json', 'gulpfile.js', 'LICENSE', 'README.md', 'bourbonify-jekyll.sublime-project', 'bower_components', 'bower.json']
 
-timezone: Europe/Warsaw
+timezone: Europe/London
 
 permalink: none

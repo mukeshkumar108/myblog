@@ -3,15 +3,133 @@
   list-style: none;
 
   > li {
-    margin-bottom: $gutter;
+    //margin-bottom: 2.25em;
+    margin-bottom: 1.618em;
+    padding-top: 3.236em;
+    border-top: 1px dotted $light-gray;
+    padding-bottom: 1.618em;
+    //padding-top: $gutter;
+
+    &:first-of-type {
+      border-top: none;
+      padding-top: 1.618em;
+    }
+  }
+
+  .summary {
+    //margin-top: 0;
+    //margin-bottom: .41em;
+    //color: $light-gray;
+    margin: .809em 0;
+    //font-size: .8em;
+    width: 88%;
   }
 }
 
+.list-post-title {
+  margin-bottom: $gutter / 6;
+  //text-transform: uppercase;
+  //letter-spacing: -0.03em;
+  letter-spacing: -0.018em;
+  //font-size: 1.4em;
+}
 .post-meta {
+	//@extend .font--alt;	
   font-size: $base-font-size * .75;
-  color: $medium-gray;
+  //color: $brand-blue;
+  color: $light-gray;
+  display: block;
+  margin-bottom: .82em;
 }
 
-.post-link {
+.post-link,
+.archive_list_article_link {
   display: block;
+  color: $black;
+
+  &:visited {
+  	color: $black;
+  	opacity: 0.5;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-highlight--primary;
+  }
+}
+
+
+.socials {
+  .fa {
+    font-size: 1.33em;
+    margin-right: .375em;
+    //color: #fff;
+    //color: #e1e1e1;
+    //color: $dark-gray;
+    color: $color-highlight--primary;
+
+    &:hover,
+    &:focus {
+      color: $color-highlight--primary;
+    }
+  }
+}
+
+.post-tag-title {
+  display: block;
+  //color: #aaa;
+  //font-style: 1rem;
+}
+//
+.archive_list {
+  border-top: 1px dotted #aaa;
+  padding-top: 2.427em;
+  margin-bottom: 2.427em;
+
+  &:first-of-type {
+    padding-top: 1.618em;
+    border-top: none;
+  }
+
+  .summary {
+    margin-top: .405em;
+  }
+
+  .list-post-title {
+    font-size: 1.33em;
+  }
+}
+
+.summary {
+  //color: #aaa;
+}
+
+.read-more-link {
+  font-family: "Share Tech Mono",monospace;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-right: $gutter;
+}
+
+.small-link {
+  font-size: 1rem;
+}
+
+.service-title {
+  font-size: 1.25em;
+  margin-bottom: .809em;
+}
+
+.service-list {
+  list-style-type: disc;
+  padding-left: 1em;
+
+  li {
+    margin-bottom: .809em;
+  }
+}
+
+.section-title {
+  margin-top: $gutter * 2;
+  margin-bottom: $gutter!important;
 }

@@ -75,11 +75,11 @@ gulp.task('depsFix', ['depsInstall'], function() {
 gulp.task('build', ['deps', 'jekyllBuild'], function() {});
 
 gulp.task('jekyllBuild', ['deps'], function(done) {
-  return cp.spawn('jekyll', ['build'], {stdio: 'inherit'}).on('close', done);
+  return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'}).on('close', done);
 });
 
 gulp.task('jekyllRebuild', function(done) {
-  return cp.spawn('jekyll', ['build'], {stdio: 'inherit'}).on('close', done);
+  return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'}).on('close', done);
 });
 
 gulp.task('default', function() {

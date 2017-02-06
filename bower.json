@@ -1,10 +1,10 @@
 {
-  "name": "bourbonify-jekyll",
+  "name": "my-personal-jekyll-site",
   "version": "1.0.0",
-  "authors": "Andrzej Kłapeć",
+  "authors": "Mukesh Kumar",
   "description": "Simple boilerplate for quickly setting up Jekyll with Normalize, Bourbon and Neat.",
   "license": "MIT",
-  "homepage": "http://github.com/klapec/jekyll-bourbonify",
+  "homepage": "//github.com/mukeshkumar108/personalsite",
   "dependencies": {
     "normalize.css": "~3.0.2",
     "bourbon": "~4.1.0",

@@ -1,0 +1,29 @@
+<header class="site-header">
+<div class="site-header__content--mobile">
+	<h1 class="site-title">Mukesh Kumar</h1>
+	<a class="menu-icon"><i class="fa fa-bars"></i></a>
+</div>
+<div class="site-header__content">
+	<div class="profile">
+		<img src="{{ site.baseurl }}/assets/dist/images/mukeshkumar.jpg" alt="Mukesh Kumar" />
+		<img src="{{ site.baseurl }}/assets/dist/images/myface-name.jpg" alt="Mukesh Kumar" />
+		<!--
+		<p>Hey, my name's Mukesh Kumar, &amp; I make things on the interwebz</p>
+		-->
+	</div>
+	  
+	<nav class="site-nav">
+	    <ul>
+		   	<li class="page-link"><a href="{{ site.baseurl }}/">Posts</a></li>
+	      	{% for page in site.pages %}{% if page.title %}
+	    	<li class="page-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+	      	{% endif %}{% endfor %}
+	    </ul>
+	</nav>
+
+	  	<div class="socials">
+	        <a href="//twitter.com/craft_digital"><i class="fa fa-twitter"></i></a>
+	        <a href="//uk.linkedin.com/in/mukesh-kumar-34353647"><i class="fa fa-linkedin"></i></a>
+	        <a href="//codepen.io/mukeshkumar/"><i class="fa fa-codepen"></i></a>
+	    </div>
+</header>

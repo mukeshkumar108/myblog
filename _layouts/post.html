@@ -2,11 +2,38 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h3 class="post-title">{{ page.title }}</h3>
-    <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span>
-  </header>
   <article class="post-content">
+  	<header class="post-header">
+      <span class="page-title--small post-meta font--alt">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span>
+    	<h1 class="post-title">{{ page.title }}</h1>
+    	
+  	</header>
     {{ content }}
+    <footer class="post-footer">
+      <aside class="author-box">
+        <div class="author-box__content">
+          <div class="author-box-blurb">
+            <p>This post was written by Mukesh Kumar. If you need help with your online efforts - from digital marketing, to designing &amp; building a website - he'll be <a href="#">happy to help</a>.</p>
+          </div>
+          <div class="author-box-img">
+            <img class="widget-profile__img img--round" src="https://pbs.twimg.com/profile_images/587030911226671105/WPpN5Pqa_400x400.jpg" alt="Mukesh Kumar" />
+          </div>
+        </div>
+      </aside>
+      <!--
+      <div class='shareaholic-canvas' data-app='share_buttons' data-app-id=''></div>
+      -->
+    </footer>
   </article>
+  <!-- POST NAVIGATION -->
+  <div class="postNav">
+  	<div class="col-half">
+  		<span class="postNav__title font--alt">&larr; Previous Post</span>
+      	<h2 class="postNav__link"><a class="prev" href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a></h2>
+    </div>
+    <div class="col-half right">
+  		<span class="postNav__title font--alt">Next Post &rarr;</span>
+    	<h2 class="postNav__link"><a class="next" href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a></h2>
+    </div>
+  </div>
 </div>

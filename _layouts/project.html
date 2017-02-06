@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="project">
+  <article class="post-content">
+  	<header class="post-header">
+    	<h1 class="post-title">{{ page.title }}</h1>
+  	</header>
+    {{ content }}
+  </article>
+  <!-- POST NAVIGATION -->
+  <div class="postNav">
+  	<div class="col-half">
+  		<span class="postNav__title font--alt">Previous Project</span>
+      	<h2 class="postNav__link"><a class="prev" href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a></h2>
+    </div>
+    <div class="col-half right">
+  		<span class="postNav__title font--alt">Next Project</span>
+    	<h2 class="postNav__link"><a class="next" href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a></h2>
+    </div>
+  </div>
+</div>

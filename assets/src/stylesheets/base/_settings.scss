@@ -13,6 +13,12 @@ $small: new-breakpoint(max-width 768px 4);
 $medium: new-breakpoint(min-width 768px 8);
 $large: new-breakpoint(min-breakpoint 1024px 12);
 
+$small-screen: em(300); // Check website at 300px
+$medium-screen: em(599); // Check website at 599px
+$large-screen: em(960); // Check website at 960px & 1200px
+$x-large-screen: em(1280);
+$xx-large-screen: em(1360);
+
 // $visual-grid: true; // Display the base grid helper, default: false;
 // $visual-grid-color: // Default: #EEE;
 // $visual-grid-index:  // Show grid behind content (back) or overlay it over the content (front), default: back;
@@ -23,16 +29,26 @@ $large: new-breakpoint(min-breakpoint 1024px 12);
 
 // COLORS
 $blue: #477DCA;
+$black: #111;
 $dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #DDD;
+$medium-gray: #555;
+$light-gray: #AAA;
+$brand-red: #ff4229;
+$brand-blue: #29e6ff; 
+$green: #44CF6C;
 
+//$color-highlight--primary: $brand-red;
+$color-highlight--primary: crimson;
+//$color-highlight--secondary: $brand-blue;
+$color-highlight--secondary: #77BA99;
 // Background Color
 $base-background-color: white;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-contrast-color: #1c1c1c;
+//$base-font-color: #8c8c8c;
+$base-font-color: #333;
+$base-accent-color: $color-highlight--primary;
 
 // Link Colors
 $base-link-color: $base-accent-color;

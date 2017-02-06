@@ -1,15 +1,67 @@
+/* Animations */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* General styles */
+.page-content {
+  animation-duration: 3s;
+  animation-name: fadein;
+}
+
+
 .wrapper {
   @include outer-container();
-  border-top: 5px solid $dark-gray;
+  //border-top: 5px solid $dark-gray;
   padding: 1em;
+  width: 85%;
 }
 
 .page-content {
   @include span-columns(12);
   @include omega();
-  padding-top: $gutter;
+  padding-top: 4.5em;
+  padding-bottom: 4.5em;
+  //padding-top: $gutter;
 
   h1 {
-    line-height: 1em;
+    //line-height: 1em;
   }
+
+  @media (min-width: $large-screen) {
+    //padding-top: 4.5em;
+  }
+}
+
+.post-content {}
+
+.page-content,
+.site-footer {
+	//width: 768px;
+  max-width: 40em;
+  float: none!important; 
+  margin: 0 auto!important;
+}
+
+.right {
+	text-align: right;
+}
+
+.gray {
+  @include filter(grayscale(1));
+}
+
+.img--round {
+  border-radius: 50%;
+}
+
+.widget-profile__img {
+  max-width: 125px;
+  text-align: right;
+  float: right;
 }
